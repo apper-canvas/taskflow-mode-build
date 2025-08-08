@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 1,
+    "title": "Review quarterly performance metrics",
+    "description": "Analyze team performance data and prepare summary report for leadership meeting",
+    "categoryId": 2,
+    "priority": "high",
+    "dueDate": "2024-01-15T14:00:00Z",
+    "completed": false,
+    "createdAt": "2024-01-10T09:30:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 2,
+    "title": "Schedule annual health checkup",
+    "description": "Call doctor's office to book routine physical exam and blood work",
+    "categoryId": 3,
+    "priority": "medium",
+    "dueDate": "2024-01-20T10:00:00Z",
+    "completed": false,
+    "createdAt": "2024-01-08T16:20:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 3,
+    "title": "Complete React TypeScript course",
+    "description": "Finish the advanced TypeScript patterns section and build the final project",
+    "categoryId": 4,
+    "priority": "medium",
+    "dueDate": "2024-01-25T18:00:00Z",
+    "completed": false,
+    "createdAt": "2024-01-05T11:15:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 4,
+    "title": "Update portfolio website",
+    "description": "Add recent projects and refresh the design with new color scheme",
+    "categoryId": 1,
+    "priority": "low",
+    "dueDate": null,
+    "completed": true,
+    "createdAt": "2024-01-01T10:00:00Z",
+    "completedAt": "2024-01-12T15:30:00Z"
+  },
+  {
+    "Id": 5,
+    "title": "Organize home office space",
+    "description": "Declutter desk area, organize cables, and set up proper lighting for video calls",
+    "categoryId": 5,
+    "priority": "low",
+    "dueDate": "2024-01-18T12:00:00Z",
+    "completed": false,
+    "createdAt": "2024-01-09T14:45:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 6,
+    "title": "Set up automatic bill payments",
+    "description": "Configure auto-pay for utilities, internet, and subscription services",
+    "categoryId": 6,
+    "priority": "high",
+    "dueDate": "2024-01-16T17:00:00Z",
+    "completed": false,
+    "createdAt": "2024-01-11T08:00:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 7,
+    "title": "Plan weekend hiking trip",
+    "description": "Research trails, check weather forecast, and pack necessary gear",
+    "categoryId": 1,
+    "priority": "low",
+    "dueDate": "2024-01-19T08:00:00Z",
+    "completed": false,
+    "createdAt": "2024-01-12T19:30:00Z",
+    "completedAt": null
+  },
+  {
+    "Id": 8,
+    "title": "Prepare presentation for client meeting",
+    "description": "Create slides showcasing project progress and next phase timeline",
+    "categoryId": 2,
+    "priority": "high",
+    "dueDate": "2024-01-17T09:00:00Z",
+    "completed": false,
+    "createdAt": "2024-01-13T13:15:00Z",
+    "completedAt": null
+  }
+]

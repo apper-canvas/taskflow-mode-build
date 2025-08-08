@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'react-toastify/dist/ReactToastify.css';
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .task-card {
+    @apply bg-surface border border-gray-200 rounded-xl p-4 transition-all duration-200 ease-out cursor-pointer;
+  }
+  
+  .task-card:hover {
+    @apply transform translate-y-[-2px] shadow-card-hover;
+  }
+  
+  .priority-high {
+    @apply border-l-4 border-error;
+  }
+  
+  .priority-medium {
+    @apply border-l-4 border-warning;
+  }
+  
+  .priority-low {
+    @apply border-l-4 border-success;
+  }
+  
+  .category-pill {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 ease-out hover:shadow-lg hover:scale-[1.02];
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium transition-all duration-200 ease-out hover:bg-gray-200 hover:scale-[1.02];
+  }
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  top: 1rem;
+  right: 1rem;
+  width: 320px;
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  border-radius: 0.75rem;
+  padding: 1rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: auto;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+}
+
+.Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Checkbox Animation */
+.checkbox-container {
+  position: relative;
+  display: inline-block;
+}
+
+.checkbox-input {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.checkbox-input:checked + .checkbox-custom {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  border-color: #10B981;
+  transform: scale(1.1);
+}
+
+.checkmark {
+  width: 12px;
+  height: 12px;
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.checkbox-input:checked + .checkbox-custom .checkmark {
+  stroke-dashoffset: 0;
+}
+
+/* Animation Classes */
+.task-completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.glow-success {
+  box-shadow: 0 0 20px -8px rgba(16, 185, 129, 0.4);
+}
+
+/* Focus States */
+.focus-ring:focus {
+  outline: 2px solid #8B5CF6;
+  outline-offset: 2px;
+}
+
+/* Drag and Drop */
+.dragging {
+  opacity: 0.5;
+  transform: rotate(5deg);
+}
+
+.drop-zone {
+  border: 2px dashed #8B5CF6;
+  background-color: rgba(139, 92, 246, 0.05);
+}
